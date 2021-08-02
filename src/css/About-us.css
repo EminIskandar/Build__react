@@ -1,0 +1,80 @@
+.Company .About-us{  
+    margin: 262px auto 80px;
+}
+.Company .About-us__text{
+    padding-right: 60px;
+} 
+.Company .About-us__text h2{
+    margin-top: 20px;
+    line-height: 38px;
+}
+.Company .About-us__text h4{
+    margin-top: 40px;
+    line-height: 24px;
+}
+.Company .About-us__text p{
+    margin-top: 20px;
+    line-height: 26px;
+}
+.Company .About-us__section-icon{
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+.Company .About-us__section-description{
+    width: calc(100% - 60px);
+}
+.Company .About-us__btn button{
+    width: 160px;
+    height: 45px;
+}
+.Company .About-us__btn{
+    margin-top: 50px;
+}
+.Company .About-us__btn button:first-child{
+    margin-right: 25px;
+}
+
+@media (max-width: 1199.98px) { 
+   
+}
+@media (max-width: 991.98px) { 
+    .Company .About-us { 
+        margin: 222px auto 80px;
+    }
+}
+@media (max-width: 768px){ 
+    .Company .About-us__content{
+        flex-direction: column;
+    }
+    .Company .About-us__left,
+    .Company .About-us__right{
+        width: 100%!important;
+    }
+    .Company .About-us__text{
+        padding: 0;
+    }
+    .Company .About-us__right{
+        margin-top: 40px!important; 
+    }
+    .Company .About-us__section-item{
+        flex-direction: column;
+        text-align: center;
+        margin: 20px 0;
+    }
+    .Company .About-us__section-icon,
+    .Company .About-us__section-description{
+        width: 100%!important;
+    }
+}
+@media (max-width: 400px){ 
+    .Company .About-us__btn{
+        display: flex;
+        flex-direction: column;
+    }
+    .Company .About-us__btn button:first-child{
+        margin-bottom: 20px;
+    }
+}

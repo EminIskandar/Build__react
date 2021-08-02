@@ -1,0 +1,33 @@
+ .Logos{
+    margin: 50px 0 130px;
+}
+ .Logos__content{
+    height: 45px;
+}
+ .Logo__item{
+    width: 220px; 
+} 
+ .Logo__item img{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media (max-width: 1199.98px) { 
+     .Logo__item{
+        width: 32.33vw; 
+    }    
+     .Logos__content{
+        padding: 0;
+    }
+}
+@media (max-width: 768px) { 
+     .Logo__item{
+        width: 50vw; 
+    }    
+}
+@media (max-width: 400px) { 
+     .Logo__item{
+        width: 100vw; 
+    }    
+}

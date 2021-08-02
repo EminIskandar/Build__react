@@ -1,0 +1,83 @@
+.Address {
+    margin: 282px 0 80px;
+}
+.Address__items {
+    margin-top: 40px;
+}
+.Address__office-address{
+    width: 430px; 
+}
+.Adress__info{
+    margin-top: 20px;
+}
+.Adress__info p{
+    margin: 10px 0;
+}
+.Info__address{
+    width: 60%;
+}
+.Info__phone-email{
+    width: 30%;
+}
+.Address__btn{
+    display: flex;
+    margin-top: 50px;
+}
+.Address__btn-item:first-child button{
+    width: 210px;
+    height: 50px;
+    border: none;
+    background-color: var(--orange);
+    margin-right: 20px;
+}
+.Address__btn-item:last-child button{
+    width: 160px;
+    height: 50px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+}
+.mapouter{position:relative;text-align:right;width:600px;height:400px;}
+.gmap_canvas {overflow:hidden;background:none!important;width:600px;height:400px;}
+.gmap_iframe {width:550px!important;height:305px!important;} 
+
+@media (max-width: 1199.98px) { 
+    .Address__office-address{
+        width: 50%; 
+    }
+    .Adress__info{
+        width: 75%;
+    }
+    .Address__map{
+        width: 50%;
+    }
+    .mapouter{
+        width: 100%!important;
+        position: relative;
+    }
+    .gmap_iframe,
+    .gmap_canvas{
+        width: 100%!important;
+    }
+}
+@media (max-width: 991.98px) {  
+    .Adress__info,.Address__btn{
+        flex-direction: column;
+    }
+    .Address__btn-item:first-child{
+        margin-bottom: 20px;
+    }
+
+}
+@media (max-width: 768px) { 
+    .Address__items{
+        flex-direction: column!important;
+    }
+    .Address__office-address,
+    .Address__map{
+        width: 100%!important; 
+    } 
+    .Address__map{
+        margin-top: 40px;
+    }
+} 

@@ -1,0 +1,211 @@
+
+.Articles{
+    margin: 282px 0 80px;
+}
+
+.Article__post{
+    width: 730px;
+    height: 730px;
+    position: relative;
+    cursor: pointer;
+}
+.Article__post:not(:last-child){
+    margin-bottom: 40px;
+}
+.Post__img{
+    width: 100%;
+    height: calc(100% - 290px);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Post__img img{
+    height: 110%;
+}
+.Post__description{
+    border: 1px solid #eee;
+    border-top: none;
+    height: 290px;
+    padding: 40px 30px;
+    box-sizing: border-box;
+}
+.Post__short-info{
+    margin-bottom: 20px;
+}
+.Post__short-info h2{
+    color: #5a5a5a;
+}
+.Post__text p{
+    line-height: 26px;
+    margin-top: 20px;
+}
+.Post__text h2{
+    transition: all .3s ease-in-out;
+}
+.Post__text h2:hover{
+    color: var(--orange);
+}
+.Post__link a{
+    color: var(--orange);
+}
+.Post__link a:hover{
+    text-decoration: none;
+    color: var(--orange);
+}
+.Article__right-side{
+    width: calc(100% - 760px);
+}
+.Article__search form{
+    height: 50px;
+    width: 100%;
+    display: flex;
+}
+.Article__search form input{
+    width: calc(100% - 50px);
+    height: 100%;
+    border: 1px solid #eee;
+    border-right: none;
+    padding-left: 15px;
+}
+.Article__search form input:focus {
+    outline: none;
+    box-shadow: none;
+} 
+.Article__search form button{
+    width: 50px;
+    height: 100%;
+    border:none;
+    background-color: var(--orange);
+    color: #fff;
+    border: 1px solid #eee;
+}
+.Article__section{
+    border: 1px solid #eee;
+    padding: 50px 40px;
+    box-sizing: border-box;
+    margin-top: 40px;
+}
+.Article__section-title{
+    position: relative;
+    margin-bottom: 50px;
+}
+.Article__section-title::before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 4px;
+    background-color: var(--orange);
+    bottom: 0;
+    transform: translateY(20px);
+} 
+.Popular-post__item{
+    height: 100px;
+}
+.Popular-post__img{
+    width: 80px;
+    height: 70px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Popular-post__img img{
+   height: 110%;
+}
+.Popular-post__text{
+    width: calc(100% - 90px);
+}
+.Article__categories-item:not(:last-child){
+    margin-bottom: 20px;
+}
+.Article__categories-item a,
+.Article__categories-item span{
+    color: #5a5a5a;
+}
+.Article__categories-item a{
+    transition: all .4s ease-in-out;
+    margin-right: 5px; 
+}
+.Article__categories-item a:hover{
+    text-decoration: none;
+    color: var(--orange);
+}
+.Artile__archives-item a{
+    color: #5a5a5a;
+    transition: all .4s ease-in-out;
+}
+.Artile__archives-item:not(:last-child){
+    margin-bottom: 20px;
+}
+.Artile__archives-item  a:hover{
+    text-decoration: none;
+    color: var(--orange);
+}
+.Article__tag-item a{
+    color: #5a5a5a;
+     transition: all .2s ease-in-out;
+} 
+.Article__tag-item{
+    padding: 5px 10px;   
+    border: 1px solid #eee;
+    display: inline-block;
+    margin: 5px;
+    transition: all .2s ease-in-out;
+} 
+.Article__tag-item:hover a{
+    color: #fff;
+    text-decoration: none;
+}
+.Article__tag-item:hover{
+    background-color: var(--orange);
+}
+
+@media (max-width: 1199.98px) {
+    .Article__post{
+        width: 610px;
+        height: 720px; 
+    }
+    .Article__right-side {
+        width: calc(100% - 640px);
+    }
+}
+@media (max-width: 991.98px) {
+    .Articles__content{
+        flex-direction: column!important; 
+    }
+    .Article__right-side,
+    .Article__post{
+        width: 100%;
+    }
+    .Article__search{
+        margin-top: 80px;
+    }
+}
+@media (max-width: 768px) {
+    .Post__text h2{
+        font-size: 22px;
+    }
+    .Post__description{
+        height: 310px;
+    }
+    .Post__img{
+        height: calc(100% - 310px);
+    }
+}
+@media (max-width: 575.98px){
+    .Post__description{
+        padding: 20px;
+    }
+    .Post__description{
+        height: auto;
+    }
+    .Post__img{
+       max-height: 310px;
+    }
+    .Popular-post__item {
+        height: auto;
+        margin-bottom: 10px;
+    }
+}
