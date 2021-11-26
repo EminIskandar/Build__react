@@ -1,9 +1,7 @@
 import React from 'react'
 
 //
-import ContactHeader from '../components/Contact-header'
-import Address from '../components/Address'
-import SendMessage from '../components/Send-message'
+import { ContactAddress, ContactHeader, ContactSendMessage } from 'components'
 
 export default function Contact() {
 
@@ -12,8 +10,8 @@ export default function Contact() {
     return (
          <main className="Contact">
              <ContactHeader/>
-             <Address/> 
-             <SendMessage/> 
+             <ContactAddress/> 
+             <ContactSendMessage/> 
          </main>
     )
 }

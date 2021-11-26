@@ -1,13 +1,7 @@
 import React from 'react'
 
 //component
-import CompanyHeader from '../components/company-header'
-import AboutUs from '../components/About-us'
-import Stat from '../components/Stat'
-import Team from '../components/Team'
-import Sustaiability from '../components/Sustaiability'
-import ClientSlider from '../components/Client-slider'
-import Logos from '../components/Logos'
+import { CompanyHeader, CompanyAbout, CompanyStat, Team, Sustainability, ClientSlider, Logos} from 'components'
 
 export default function Company() {
 
@@ -17,10 +11,10 @@ export default function Company() {
     return (
       <main className="Company">
           <CompanyHeader/>
-          <AboutUs />
-          <Stat/> 
+          <CompanyAbout/>
+          <CompanyStat/> 
           <Team/> 
-          <Sustaiability/> 
+          <Sustainability/> 
           <ClientSlider/> 
           <Logos/>
       </main>

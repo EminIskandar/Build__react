@@ -6,21 +6,15 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './main.css' 
 
 //components
-import Header from './components/Header'   
-import Footer from './components/Footer'      
+import { Header, Footer } from 'components' 
 
 //pages
-import Home from './pages/Home' 
-import Company from './pages/Company';
-import Solution from './pages/Solution';
-import Project from './pages/Project';
-import Blog from './pages/Blog';
-import Contact from './pages/Contact';
+import { Home, Company, Solution, Project, Blog , Contact } from 'page'
 
 function App() {
   return (
     <Router>
-      <div className="App">   
+      <>   
         <Header/>  
             <Switch>
               <Route path="/" exact component={Home} />     
@@ -31,7 +25,7 @@ function App() {
               <Route path="/contact" exact component={Contact} />     
             </Switch>  
         <Footer/>    
-      </div>
+      </>
   </Router>
   );
 }

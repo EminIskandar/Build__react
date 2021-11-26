@@ -1,8 +1,8 @@
 import React from 'react'
 
 //component
-import SolutionHeader from '../components/Solution-header'
-import Building from '../components/Building'
+import {SolutionHeader, SolutionBuilding} from 'components'
+
 export default function Solution() {
 
     document.title = 'BuildBench | Solution'
@@ -10,7 +10,7 @@ export default function Solution() {
     return (
        <main className="Solution">
            <SolutionHeader/>
-           <Building/>
+           <SolutionBuilding/>
        </main>
     )
 }

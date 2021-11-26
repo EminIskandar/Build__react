@@ -1,8 +1,7 @@
 import React from 'react'
 
-//
-import BlogHeader from '../components/Blog-header'
-import Articles  from '../components/Articles'
+//component 
+import { BlogArticle, BlogHeader } from 'components'
 
 export default function Blog() {
 
@@ -11,7 +10,7 @@ export default function Blog() {
     return (
         <section className="Blog">
             <BlogHeader/>
-            <Articles/>
+            <BlogArticle/>
         </section>
     )
 }

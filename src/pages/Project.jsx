@@ -1,8 +1,8 @@
 import React from 'react'
 
-//
-import ProjectHeader from '../components/Project-header'
-import Works from '../components/Works' 
+//components
+import { ProjectHeader, ProjectWork} from 'components'
+
 export default function Project() {
 
     document.title = 'BuildBench | Project'
@@ -10,7 +10,7 @@ export default function Project() {
     return (
         <main className="Project">
              <ProjectHeader/>
-             <Works/>
+             <ProjectWork/>
         </main>
     )
 }

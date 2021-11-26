@@ -3,33 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@300;400;700&family=Roboto&display=swap');
 
-@import './css/Footer.css';
-@import './css/Header.css';
-@import './css/Slider.css';
-@import './css/Our-proud.css';
-@import './css/Services.css';
-@import './css/Sustaiability.css';
-@import './css/Team.css';
-@import './css/Learn-more.css';
-@import './css/Project.css';
-@import './css/Contact-us.css';
-@import './css/Process.css';
-@import './css/Client-slider.css';
-@import './css/Media.css';
-@import './css/Logos.css';
-@import './css/company-header.css';
-@import './css/About-us.css';
-@import './css/Stat.css';
-@import './css/Solution-header.css';
-@import './css/Building.css';
-@import './css/Works.css';
-@import './css/Project-header.css';
-@import './css/Blog-header.css';
-@import './css/Articles.css';
-@import './css/Contact-header.css';
-@import './css/Address.css';
-@import './css/Send-message.css';
-
 :root { 
   --orange: #FEC03B;
   --grey: #C6C2BF;
